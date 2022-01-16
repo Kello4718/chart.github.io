@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Document</title>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+<body class="body">
+  <main class="main">
+    <section class="workload">
+      <div class="workload__filter">
+        <div class="workload__filter-functional">
+          <div class="workload__filter-functional-by-time">
+            <ul class="workload__filter-functional-by-time-list">
+              <li class="workload__filter-functional-by-time-item"><button class="workload__filter-functional-by-time-button workload__filter-functional-by-time-button--yesterday">Вчера</button></li>
+              <li class="workload__filter-functional-by-time-item"><button class="workload__filter-functional-by-time-button workload__filter-functional-by-time-button--active workload__filter-functional-by-time-button--today">Сегодня</button></li>
+              <li class="workload__filter-functional-by-time-item"><button class="workload__filter-functional-by-time-button workload__filter-functional-by-time-button--week">Неделя</button></li>
+            </ul>
+          </div>
+          <div class="workload__filter-functional-kinds-of-chart">
+            <ul class="workload__filter-functional-kinds-of-chart-list">
+              <li class="workload__filter-functional-kinds-of-chart-item"><button class="workload__filter-functional-kinds-of-chart-button workload__filter-functional-kinds-of-chart--active workload__filter-functional-kinds-of-chart-button--gendalf">График<br> загруженности<br> линии ГЭНДАЛЬФ</button></li>
+              <li class="workload__filter-functional-kinds-of-chart-item"><button class="workload__filter-functional-kinds-of-chart-button  workload__filter-functional-kinds-of-chart-button--optimal">График<br> загруженности<br> линии на тарифе "Оптимальный"</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="workload__filter-statistics">
+          <div class="workload__filter-statistics-wrapper">
+            <table class="workload__filter-statistics-table">
+              <tr class="workload__filter-statistics-table-row">
+                <th class="workload__filter-statistics-table-header-cell">Сейчас<br> в очереди</th>
+                <td class="workload__filter-statistics-table-description-cell workload__filter-statistics-table-description-cell--quantity">30</td>
+              </tr>
+              <tr class="workload__filter-statistics-table-row">
+                <th class="workload__filter-statistics-table-header-cell">Скорость приёма<br> звонка</th>
+                <td class="workload__filter-statistics-table-description-cell workload__filter-statistics-table-description-cell--speed">00:01:20</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="workload__chart">
+        <div id="workload__chart-chart-today" class="workload__chart-chart" style="width: 100%; height: 400px;"></div>
+      </div>
+    </section>
+  </main>
+  <script src="lib/liteChart.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+</body>

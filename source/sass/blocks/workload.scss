@@ -1,0 +1,152 @@
+.workload__filter {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0 0;
+}
+
+.workload__filter-functional {
+  width: 400px;
+}
+
+.workload__filter-functional-by-time {
+  width: 100%;
+
+  margin: 0 0 10px;
+}
+
+.workload__filter-functional-by-time-list {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.workload__filter-functional-by-time-button {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 10px 0;
+}
+
+.workload__filter-functional-by-time-button--active {
+  color: white;
+  background: blue;
+}
+
+.workload__filter-functional-kinds-of-chart-list {
+  list-style: none;
+  line-height: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 10px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.workload__filter-functional-kinds-of-chart-button {
+  width: 100%;
+  height: 100%;
+
+  background: transparent;
+
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  padding: 10px 0;
+}
+
+.workload__filter-functional-kinds-of-chart--active {
+  color: white;
+  background: blue;
+}
+
+.workload__filter-statistics {
+  width: 300px;
+}
+
+.workload__filter-statistics-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.workload__filter-statistics-table {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  &::before {
+    content: '';
+
+    width: calc(100% - 20px);
+    height: 1px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: grey;
+  }
+}
+
+.workload__filter-statistics-table-row {
+  height: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 20px;
+
+  padding: 0 20px;
+}
+
+.workload__filter-statistics-table-header-cell {
+  width: 75%;
+
+  text-align: left;
+
+  padding: 0;
+}
+
+.workload__filter-statistics-table-description-cell {
+  width: 25%;
+
+  text-align: center;
+
+  padding: 0;
+}
+
+g.tooltips {
+  width: 175px !important;
+  height: 175px !important;
+  border-radius: 50%;
+}
+
+rect#chart-tooltip {
+  width: 175px !important;
+  height: 175px !important;
+  border-radius: 50% !important;
+}
+
+text#chart-tooltip-label-text {
+  display: block;
+  text-align: center; 
+}
