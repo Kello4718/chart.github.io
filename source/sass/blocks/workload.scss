@@ -148,5 +148,29 @@ rect#chart-tooltip {
 
 text#chart-tooltip-label-text {
   display: block;
-  text-align: center; 
+  text-align: center;
+}
+
+.ct-line.ct-threshold-above, .ct-point.ct-threshold-above, .ct-bar.ct-threshold-above {
+  stroke: #f05b4f !important;
+}
+
+.ct-line.ct-threshold-middle, .ct-point.ct-threshold-middle, .ct-bar.ct-threshold-middle {
+  stroke: black !important;
+}
+
+.ct-line.ct-threshold-below, .ct-point.ct-threshold-below, .ct-bar.ct-threshold-below {
+  stroke: #59922b !important;
+}
+
+.ct-area.ct-threshold-above {
+  fill: #f05b4f !important;
+}
+
+.ct-area.ct-threshold-middle {
+  fill: black!important;
+}
+
+.ct-area.ct-threshold-below {
+  fill: #59922b !important;
 }
